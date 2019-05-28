@@ -6,6 +6,8 @@ pmiAbortPreviousRunningBuilds(exclude: ['master', 'develop'])
 
 pmiLoadParamsFromPreviousBuild(exclude_branches: ['master', 'develop'], params: ['PEL_BRANCH'])
 
+sleep(3000)
+exit
 //Dynamically allocateNode if using j2 and return node label if using j1
 AGENT_LABEL = pmiAllocateNode(node : "qal_qtc")
 
