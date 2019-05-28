@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>resources/ModificationsFileParameter.png</file>
+    <file>resources/ModificationsFileParameterZoomed.png</file>
+    <file>resources/pmi_upto_128x128.ico</file>
+</qresource>
+</RCC>

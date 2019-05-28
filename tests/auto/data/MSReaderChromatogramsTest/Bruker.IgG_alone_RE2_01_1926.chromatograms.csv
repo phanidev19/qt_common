@@ -1,0 +1,9 @@
+id=0	7484	expected/Bruker.IgG_alone_RE2_01_1926.chromatogram.1.data	id=0,instId=,inst=micrOTOF series,instDescr=MS (BPC,MS),t=ChromMs,unit=Intensity,offset=0.000000
+id=1	39931	expected/Bruker.IgG_alone_RE2_01_1926.chromatogram.2.data	id=1,instId=,inst=micrOTOF series,instDescr=MS (TIC,All MS/MS),t=ChromMs,unit=Intensity,offset=0.000000
+id=2	7484	expected/Bruker.IgG_alone_RE2_01_1926.chromatogram.3.data	id=2,instId=,inst=micrOTOF series,instDescr=MS (TIC,MS),t=ChromMs,unit=Intensity,offset=0.000000
+id=3	216019	expected/Bruker.IgG_alone_RE2_01_1926.chromatogram.4.data	id=3,instId=,inst=,instDescr=LC Pump 1 Pressure,t=ChromPressure,unit=Bar,offset=0.000000
+id=4	216019	expected/Bruker.IgG_alone_RE2_01_1926.chromatogram.5.data	id=4,instId=,inst=,instDescr=Flow,t=ChromFlow,unit=MicroLiterPerMinute,offset=0.000000
+id=5	216019	expected/Bruker.IgG_alone_RE2_01_1926.chromatogram.6.data	id=5,instId=,inst=,instDescr=Solvent A,t=ChromSolventMix,unit=Percent,offset=0.000000
+id=6	216019	expected/Bruker.IgG_alone_RE2_01_1926.chromatogram.7.data	id=6,instId=,inst=,instDescr=Solvent B,t=ChromSolventMix,unit=Percent,offset=0.000000
+id=7	216019	expected/Bruker.IgG_alone_RE2_01_1926.chromatogram.8.data	id=7,instId=,inst=,instDescr=Solvent C,t=ChromSolventMix,unit=Percent,offset=0.000000
+id=8	216019	expected/Bruker.IgG_alone_RE2_01_1926.chromatogram.9.data	id=8,instId=,inst=,instDescr=Solvent D,t=ChromSolventMix,unit=Percent,offset=0.000000

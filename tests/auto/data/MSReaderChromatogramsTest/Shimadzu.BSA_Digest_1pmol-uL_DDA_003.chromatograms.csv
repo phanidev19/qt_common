@@ -1,0 +1,6 @@
+bp;s=1;e=1	403	expected/Shimadzu.BSA_Digest_1pmol-uL_DDA_003.chromatogram.1.data	Shimadzu BasePeak
+xic;s=1;e=1	403	expected/Shimadzu.BSA_Digest_1pmol-uL_DDA_003.chromatogram.2.data	Shimadzu XIC
+tic;s=1;e=1	403	expected/Shimadzu.BSA_Digest_1pmol-uL_DDA_003.chromatogram.3.data	Shimadzu TIC (1)
+tic;s=1;e=2	265	expected/Shimadzu.BSA_Digest_1pmol-uL_DDA_003.chromatogram.4.data	Shimadzu TIC (2)
+tic;s=1;e=3	247	expected/Shimadzu.BSA_Digest_1pmol-uL_DDA_003.chromatogram.5.data	Shimadzu TIC (3)
+tic;s=1;e=4	244	expected/Shimadzu.BSA_Digest_1pmol-uL_DDA_003.chromatogram.6.data	Shimadzu TIC (4)

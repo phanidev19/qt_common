@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>resources/GlycansFileParameter.png</file>
+    <file>resources/GlycansFileParameterZoomed.png</file>
+    <file>resources/pmi_upto_128x128.ico</file>
+</qresource>
+</RCC>

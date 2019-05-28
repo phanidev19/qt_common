@@ -1,0 +1,1 @@
+nn_weights.db - contains neural network configuration used in feature finder 

@@ -1,0 +1,68 @@
+# Provides information about the installed library.
+# It can be used directly from CMake via find_package(<name> NO_MODULE)
+
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/pmi_common_msTargets.cmake")
+include(CMakeFindDependencyMacro)
+
+find_dependency(pmi_common_tiles)
+
+# Copy common_ms dependencies:
+add_custom_target(copy_common_ms_dependencies)
+set_property(TARGET copy_common_ms_dependencies PROPERTY FOLDER "CustomBuildSteps")
+add_dependencies(pmi_common_ms copy_common_ms_dependencies)
+
+# TODO(Ivan Skiba 2018-08-23): refactor (copy-pasted from C:\Users\aidan\Documents\qt_common\src\CMakeLists.txt)
+set(_VENDOR_APIS_ROOT ${PMIExternalsLibs_ROOT_DIR}/bin/vendor_api)
+add_custom_command(
+    TARGET copy_common_ms_dependencies POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${_VENDOR_APIS_ROOT}/Thermo/ ${PMI_BINARY_OUTPUT_DIRECTORY}/
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${_VENDOR_APIS_ROOT}/Bruker/ ${PMI_BINARY_OUTPUT_DIRECTORY}/
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${_VENDOR_APIS_ROOT}/ABI/ ${PMI_BINARY_OUTPUT_DIRECTORY}/vendor_api/ABI/
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${_VENDOR_APIS_ROOT}/Agilent/ ${PMI_BINARY_OUTPUT_DIRECTORY}/
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${_VENDOR_APIS_ROOT}/Shimadzu ${PMI_BINARY_OUTPUT_DIRECTORY}/vendor_api/Shimadzu/
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        ${_VENDOR_APIS_ROOT}/BrukerTims/timsdata.dll ${PMI_BINARY_OUTPUT_DIRECTORY}/
+    COMMENT "Copying pmi_common_ms 3rd-party dependencies (vendor APIs) from ${_VENDOR_APIS_ROOT} to ${PMI_BINARY_OUTPUT_DIRECTORY}/"
+)
+
+install(DIRECTORY
+    ${_VENDOR_APIS_ROOT}/Thermo/
+    ${_VENDOR_APIS_ROOT}/Agilent/
+    DESTINATION ${CMAKE_INSTALL_BINDIR}
+    COMPONENT Runtime
+)
+
+install(DIRECTORY
+    ${_VENDOR_APIS_ROOT}/ABI/
+    DESTINATION ${CMAKE_INSTALL_BINDIR}/vendor_api/ABI
+    COMPONENT Runtime
+)
+
+install(DIRECTORY
+    ${_VENDOR_APIS_ROOT}/Bruker/
+    DESTINATION ${CMAKE_INSTALL_BINDIR}
+    COMPONENT Runtime
+)
+
+install(DIRECTORY
+    ${_VENDOR_APIS_ROOT}/Shimadzu/
+    DESTINATION ${CMAKE_INSTALL_BINDIR}/vendor_api/Shimadzu
+    COMPONENT Runtime
+)
+
+#TODO(copypasta) reuse code from src/CMakeLists.txt
+install(FILES
+    ${_VENDOR_APIS_ROOT}/BrukerTims/timsdata.dll
+    DESTINATION ${CMAKE_INSTALL_BINDIR}
+    COMPONENT Runtime
+)
+unset(_VENDOR_APIS_ROOT)
+
+# -- End of: Copy common_ms dependencies

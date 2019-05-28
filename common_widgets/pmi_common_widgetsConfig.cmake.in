@@ -1,0 +1,9 @@
+# Provides information about the installed library.
+# It can be used directly from CMake via find_package(<name> NO_MODULE)
+
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/pmi_common_widgetsTargets.cmake")
+include(CMakeFindDependencyMacro)
+
+find_dependency(pmi_common_core_mini)

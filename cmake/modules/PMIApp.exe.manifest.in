@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Manifest for PMI apps that provides MS Reader assemblies.
+     Created by pmi_add_manifest() from @PMI_REL_MANIFEST_TEMPLATE@ template.
+     WARNING! All changes made in this file will be lost! -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    <assemblyIdentity type="win32"
+                    name="@PMI_ADD_MANIFEST_APP@"
+                    version="1.0.0.0"
+    />
+
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32"
+                    name="MassSpecDataReader"
+                    version="8.0.8208.0"
+                    processorArchitecture="MSIL"
+                    language="*"
+            />
+        </dependentAssembly>
+    </dependency>
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32"
+                    name="BaseDataAccess"
+                    version="8.0.8208.0"
+                    processorArchitecture="MSIL"
+                    language="*"
+            />
+        </dependentAssembly>
+    </dependency>
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32"
+                    name="BaseCommon"
+                    version="8.0.8208.0"
+                    processorArchitecture="MSIL"
+                    language="*"
+            />
+        </dependentAssembly>
+    </dependency>
+
+    <dependency>
+        <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Interop.EDAL.SxS.manifest">
+            <assemblyIdentity name="Interop.EDAL.SxS" version="1.0.0.0" type="win32" />
+        </dependentAssembly>
+    </dependency>
+    <dependency>
+        <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Interop.HSREADWRITELib.SxS.manifest">
+            <assemblyIdentity name="Interop.HSREADWRITELib.SxS" version="1.0.0.0" type="win32" />
+        </dependentAssembly>
+    </dependency>
+
+</assembly>

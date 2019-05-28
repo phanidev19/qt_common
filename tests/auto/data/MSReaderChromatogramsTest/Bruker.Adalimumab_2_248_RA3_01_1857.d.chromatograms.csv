@@ -1,0 +1,7 @@
+id=0	526	expected/Bruker.Adalimumab_2_248_RA3_01_1857.d.chromatogram.1.data	id=0,instId=,inst=micrOTOF series,instDescr=MS (TIC,+MS),t=ChromMs,unit=Intensity,offset=0.000000
+id=1	21598	expected/Bruker.Adalimumab_2_248_RA3_01_1857.d.chromatogram.2.data	id=1,instId=,inst=,instDescr=LC Pump 1 Pressure,t=ChromPressure,unit=Bar,offset=0.000000
+id=2	21598	expected/Bruker.Adalimumab_2_248_RA3_01_1857.d.chromatogram.3.data	id=2,instId=,inst=,instDescr=Flow,t=ChromFlow,unit=MicroLiterPerMinute,offset=0.000000
+id=3	21598	expected/Bruker.Adalimumab_2_248_RA3_01_1857.d.chromatogram.4.data	id=3,instId=,inst=,instDescr=Solvent A,t=ChromSolventMix,unit=Percent,offset=0.000000
+id=4	21598	expected/Bruker.Adalimumab_2_248_RA3_01_1857.d.chromatogram.5.data	id=4,instId=,inst=,instDescr=Solvent B,t=ChromSolventMix,unit=Percent,offset=0.000000
+id=5	21598	expected/Bruker.Adalimumab_2_248_RA3_01_1857.d.chromatogram.6.data	id=5,instId=,inst=,instDescr=Solvent C,t=ChromSolventMix,unit=Percent,offset=0.000000
+id=6	21598	expected/Bruker.Adalimumab_2_248_RA3_01_1857.d.chromatogram.7.data	id=6,instId=,inst=,instDescr=Solvent D,t=ChromSolventMix,unit=Percent,offset=0.000000

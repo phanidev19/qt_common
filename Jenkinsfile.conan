@@ -1,0 +1,8 @@
+//load PMI-CI-Helpers from https://bitbucket.org/ykil/jenkins-shared-library.git
+@Library('PMI-CI-Helpers@v2.2.7') _
+
+//Dynamically allocateNode if using j2 and return node label if using j1
+AGENT_LABEL = pmiAllocateNode(node : "qal_qtc")
+
+
+pmiConanPipeline(project: 'qt_common', node: "${AGENT_LABEL}", withAutotests: true, deploy: true)

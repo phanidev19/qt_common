@@ -1,0 +1,30 @@
+MassName,MassDaltonValue,EnableAutoAssignment
+G0F,1444.534,1
+G1F,1606.587,1
+G0F/G0F - GlcNAc,2685.989,1
+G0F/G0F,2889.068,1
+G0F/G1F - GlcNAc,2848.042,1
+G0F/G1F,3051.121,1
+G1F/G1F,3213.174,1
+G1F/G2F,3375.226,1
+G0F/G2F+NeuAc,3504.268,1
+G1F/G2F+NeuAc,3666.321,1
+G2F/G2F+NeuAc,3828.373,1
+G1F/G2F+2NeuAc,3957.416,1
+G2F/G2F+2NeuAc,4119.468,1
+G2F/G2F+3NeuAc,4410.563,1
+Reference,0,1
+Minus  G0F,-1444,0
+Loss of 2 C-term Lys,-256,0
+Man5 (-G0F),-228,0
+Minus GlcNAc,-203,0
+Minus Fuc,-146,0
+Loss of C-term Lys,-128,0
+N-term pyroglutamate,-17,0
+Plus C-term Lys,128,0
+Hexose,162,0
+Presence of 2 C-term Lys,256,0
+Hexose & C-term Lys,290,0
+Plus 2 Hexose,324,0
+Plus 2 Gal & 1 NeuAc,615,0
+Plus 2 Gal & 1 NeuGc,631,0
