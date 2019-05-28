@@ -1,5 +1,5 @@
 //load PMI-CI-Helpers from https://bitbucket.org/ykil/jenkins-shared-library.git
-@Library('PMI-CI-Helpers@master') _
+@Library('PMI-CI-Helpers@v2.2.7') _
 
 //abort old build if it is a feature branch
 pmiAbortPreviousRunningBuilds(exclude: ['master', 'develop'])
